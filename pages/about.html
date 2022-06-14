@@ -11,6 +11,9 @@
     <!--Description-->
     <meta name="description" content="" />
     <title>About | Harddesign</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>   
     <!--Favicon-->
     <link rel="shortcut icon" href="" />
     <!--Font Awesome-->
@@ -48,18 +51,24 @@
         <div class="title">
             <h1>About Us</h1>
         </div>
-        <div class="containerAbout">
-            <div class="content">
-                <div class="article">
-                    <h3>Passion in that we do</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus, consectetur adipisci quod eum magni atque, at amet et quas ex voluptates obcaecati magnam. Ab quasi aut similique facere porro.</p>
-                     <a href="" class="button">Read More</a>
+        <div class="container">
+            <div class="containerAbout">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="article">
+                            <h3>Passion in that we do</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus, consectetur adipisci quod eum magni atque, at amet et quas ex voluptates obcaecati magnam. Ab quasi aut similique facere porro.</p>
+                             <a href="" class="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">   
+                        <div class="image-section">
+                            <img src="../images/about.jpg" alt="about us image">
+                        </div>
+                    </div>    
                 </div>
-                <div class="image-section">
-                    <img src="../images/about.jpg" alt="about us image">
-                </div>
-            </div>
-        </div> 
+            </div> 
+        </div>    
     </section>    
 
 
@@ -78,8 +87,10 @@
         <form>
             <!-- Suscribe Section -->
             <p class="unite">Unite y mantenete actualizado con las novedades!</p>
-            <input type="email" name="correoelectronico" />
-            <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">                
+            <div class="boxFooter">
+                 <input type="email" name="correoelectronico" />
+                 <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">  
+            </div>               
             </input>
         </form>
         <h6>Derechos de autor ©NicolasG3</h6>

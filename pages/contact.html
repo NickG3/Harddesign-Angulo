@@ -11,6 +11,8 @@
     <!--Description-->
     <meta name="description" content="">
     <title>Contact | Harddesign</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script> 
     <!--Favicon-->
     <link rel="shortcut icon" href="">
     <!--Font Awesome-->
@@ -53,14 +55,14 @@
             <div class="datos">
                 <h3>Dejanos tu consulta</h3>
                 <!-- Nombre -->
-                <input type="text" name="nombre" placeholder="Nombre" />
+                <input type="text" name="nombre" placeholder="Nombre" class="form-control" />
                 <!--Telefono-->
-                <input type="number" name="telefono" placeholder="Télefono" />
+                <input type="number" name="telefono" placeholder="Télefono" class="form-control"/>
                 <!--Email-->
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" class="form-control"/>
                 <!--Consulta a realizar-->
-                <textarea name="paragraph_text" cols="50" rows="10" placeholder="Ingrese su consulta aquí"></textarea>
-                <button class="enviar" type="button" onclick="alert('Su consulta ha sido enviada, le responderemos a la brevedad!')">Enviar consulta</button>
+                <textarea name="paragraph_text" cols="50" rows="10" placeholder="Ingrese su consulta aquí" class="form-control"></textarea>
+                <button class="enviar form-control" type="button" onclick="alert('Su consulta ha sido enviada, le responderemos a la brevedad!')">Enviar consulta</button>
 
                 <h2>Nuestros datos</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -91,8 +93,10 @@
         <form>
             <!-- Suscribe Section -->
             <p class="unite">Unite y mantenete actualizado con las novedades!</p>
-            <input type="email" name="correoelectronico" />
-            <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">                
+            <div class="boxFooter">
+                 <input type="email" name="correoelectronico" />
+                 <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">  
+            </div>               
             </input>
         </form>
         <h6>Derechos de autor ©NicolasG3</h6>

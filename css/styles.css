@@ -450,27 +450,30 @@ flex-flow: column nowrap;
 ::-webkit-scrollbar { width: 8px;}
 ::-webkit-scrollbar-track { background: #f5f5f5; }
 ::-webkit-scrollbar-thumb {background: rgb(66,66,66);
-background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(130,130,130,1) 100%); }
+background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(130,130,130,1) 100%); .radd (@radd:0px); }
 ::-webkit-scrollbar-thumb:hover { background: #999; }
 
 body {margin-top:0px;}
 .header {padding:50px 0px 30px 0px;}
-.logo h1 {padding:0px;  display: inline-block; width: 100%; text-align: center;}
-footer {float:left; width: 100%}
+.logo h1 {padding:0px;  display: inline-block; width: 100%; text-align: center; font-weight: 700;}
+footer {float:left; width: 100%; text-align: center;}
 section .title h1 {font-size:25px;padding:0px; margin-bottom:50px;}
 
 .footer {text-align: center;padding:30px 15px;}
 .footer .unite {margin:10px 0px;font-weight: 300}
-.footer input, .footer button {height: 31px;padding:5px 15px;}
+.footer input, .footer button {height: 31px;padding:2px 15px;}
 .footer .enviar {min-width: 120px;font-size:13px; cursor: pointer;}
 .footer .enviar:hover {background: #999; border:1px solid #999; color:#fff;}
 .footer h6 {margin-top:10px; }
+.boxFooter {display: inline-block;}
+.boxFooter input {float:left;}
 
 /* INICIO */
-
+header {text-align: center;}
+.nav {display: inline-block;}
 .heroBanner {height: initial;}
 .heroBanner img {width: 100%;}
-.cuotas {    width: 100%;    float: left;    padding: 40px 30px;    text-align: center;    background: #eee;    text-transform: uppercase;    font-weight: 300;}
+.cuotas {width: 100%;float: left; padding: 40px 30px;text-align: center; background: #eee;text-transform: uppercase;    font-weight: 300;}
 
 .featured {float:left; width: 100%; padding:80px 0px;}
 .section-title {position: relative;}
@@ -496,6 +499,10 @@ section .title h1 {font-size:25px;padding:0px; margin-bottom:50px;}
 #shop .categorys li {list-style: none;width: 25%; display: inline-block;}
 #shop .categorys li a {text-decoration: none; color:#fff;display: inline-block;padding:5px;}
 #shop .categorys li a:hover {color:#ffc55b;}
+#shop .breadcrumbNav {width: 100%; float:left;}
+#shop .featured {text-align: center;}
+#shop .contenedorFiltros {width: 1024px; display: inline-block;margin-bottom:25px;}
+#shop .contenedorFiltros .botonOrdenar {float:right;    }
 
 @media only screen and (max-width: 500px) {
     #shop .categorys li {width: 100%; }
@@ -503,25 +510,29 @@ section .title h1 {font-size:25px;padding:0px; margin-bottom:50px;}
 
 /* ABOUT */
 
-#about .content .article {padding:80px;}
-#about .content .article p  {font-size: 19px;    line-height: 30px;    font-weight: 300;}
+#about .article {padding:80px;}
+#about .article p  {font-size: 19px; line-height: 30px;font-weight: 300;}
 #about .footer {margin-top:50px;}
 
 @media only screen and (max-width: 500px) {
-    #about .content .article {padding:40px;}
+    #about .article {padding:40px;}
 }
 
 /* CONTACT */
 
 #contact .datos {width:60%;float:left;background: #eee;padding:80px;}
+/*
 #contact .datos input, #contact .datos button {height: 38px;padding:5px 15px; border:1px solid #ddd;width: 46%;margin-right:2%; float:left;margin-bottom:10px; }
-#contact .datos textarea {padding:5px 15px; border:1px solid #ddd;float:left; width: 100%}
+#contact .datos textarea {padding:5px 15px; border:1px solid #ddd;float:left; width: 100%}*/
+
+#contact .datos textarea, #contact .datos input {margin-bottom:15px;font-size:14px;}
+#contact .datos textarea {height: 120px;}
 #contact .datos button.enviar {float:right; max-width: 200px; background: #000; color:#fff; margin:15px 0px;}
 #contact .datos h3 {margin-bottom:20px;}
 #contact .datos h2 {float:left; width: 100%;text-align: center;}
-#contact .datos p {float:left; width: 100%;text-align: center; font-weight: 300}
+#contact .datos p {float:left; width: 100%;text-align: center; font-weight: 300;margin-bottom:0px;}
 #contact .mapa {width:40%; float:left;}
-#contact .mapa iframe {height: 740px;}
+#contact .mapa iframe {    height: 800px;    float: left;}
 
 @media only screen and (max-width: 997px) {    
    #contact .datos input, #contact .datos, #contact .mapa  {width: 100%}
@@ -529,3 +540,8 @@ section .title h1 {font-size:25px;padding:0px; margin-bottom:50px;}
    #contact .datos, #contact .mapa iframe {height: 350px;}
    #contact .datos {height: auto;}
 }
+
+/* GALLERY */
+
+.galleryImagenes img {width: 100%; float:left;padding:25px;}
+#galleryPrincial footer {margin-top:50px;}

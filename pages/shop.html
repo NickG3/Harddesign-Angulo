@@ -11,6 +11,11 @@
     <!--Description-->
     <meta name="description" content="" />
     <title>Shop | Harddesign</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script> 
+    <script src="../js/bootstrap.bundle.min.js" type="text/javascript"></script> 
+    
     <!--Favicon-->
     <link rel="shortcut icon" href="" />
     <!--Font Awesome-->
@@ -23,6 +28,7 @@
 </head>
 
 <body id="shop">
+
     <div class="padre">
         <header class="header">
             <div class="menu">
@@ -55,7 +61,21 @@
             </ul>
         </section>
         <section class="featured section" id="featured">
+            <div class="contenedorFiltros">
+                <div class="btn-group botonOrdenar">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordenar por:
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">Mayor Precio</a></li>
+                    <li><a class="dropdown-item" href="">Menor Precio</a></li>
+                    <li><a class="dropdown-item" href="">Recomendados</a></li>
+                  </ul>
+                </div>
+            </div>    
+
             <div class="featured__container bd-grid">
+
                 <article class="product">
                     <div class="product__sale">Sale</div>
                     <img src="../images/1_NotebookAsus.jpg" alt="" class="product__img" />
@@ -100,8 +120,10 @@
         <form>
             <!-- Suscribe Section -->
             <p class="unite">Unite y mantenete actualizado con las novedades!</p>
-            <input type="email" name="correoelectronico" />
-            <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">                
+            <div class="boxFooter">
+                 <input type="email" name="correoelectronico" />
+                 <input class="enviar" type="submit" onclick="alert('Te has suscrito a nuestro Newsletter')" value="Suscribirse">  
+            </div>               
             </input>
         </form>
         <h6>Derechos de autor ©NicolasG3</h6>
