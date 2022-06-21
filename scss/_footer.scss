@@ -1,0 +1,50 @@
+// Footer
+
+.footer {
+  background-color: rgb(22, 19, 19);
+  color: white;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 15px;
+}
+.footer .unite {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+.footer input,
+.footer button {
+  height: 31px;
+  padding: 2px 15px;
+}
+.footer .enviar {
+  min-width: 120px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.footer .enviar:hover {
+  background: #999;
+  border: 1px solid #999;
+  color: #fff;
+}
+.footer h6 {
+  margin-top: 10px;
+}
+.boxFooter {
+  display: inline-block;
+}
+.boxFooter input {
+  float: left;
+}
+
+.socialMedia i {
+  color: white;
+  margin: 2px;
+}

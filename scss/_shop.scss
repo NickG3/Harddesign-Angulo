@@ -1,0 +1,45 @@
+/* SHOP */
+
+#shop .categorys {
+  float: left;
+  width: 100%;
+  background: #333;
+  text-align: center;
+  padding: 15px;
+
+  li {
+    list-style: none;
+    width: 25%;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      padding: 5px;
+      &:hover {
+        color: #ffc55b;
+      }
+    }
+  }
+}
+
+#shop .breadcrumbNav {
+  width: 100%;
+  float: left;
+}
+#shop .featured {
+  text-align: center;
+}
+#shop .contenedorFiltros {
+ padding-right: 20px;
+ margin-bottom: 25px;
+}
+#shop .contenedorFiltros .botonOrdenar {
+  float: right;
+}
+
+@media only screen and (max-width: 500px) {
+  #shop .categorys li {
+    width: 100%;
+  }
+}

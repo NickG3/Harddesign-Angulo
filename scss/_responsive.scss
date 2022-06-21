@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Smarthphone */
+@media (max-width: 480px) {
+  .text-header {
+    min-height: 100vh;
+    min-width: 160vw;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+}
+
+/* Tablet */
+/*
+  @media (min-width: 481px) and (max-width: 1023px ) {
+   header {height: 25vh;}
+  } 
+*/
+
+/* Desktop */
+@media (min-width: 1024px) {
+}

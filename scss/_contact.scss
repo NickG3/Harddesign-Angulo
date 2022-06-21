@@ -1,0 +1,67 @@
+/* CONTACT */
+
+#contact .datos {
+  width: 60%;
+  float: left;
+  background: #eee;
+  padding: 80px;
+  button.enviar {
+    float: right;
+    max-width: 200px;
+    background: #000;
+    color: #fff;
+    margin: 15px 0px;
+  }
+  textarea,
+  input {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  h2 {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+}
+
+#contact .datos #contact .datos textarea {
+  height: 120px;
+}
+#contact .datos #contact .datos h3 {
+  margin-bottom: 20px;
+}
+
+#contact .mapa {
+  width: 40%;
+  float: left;
+  iframe {
+    height: 800px;
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 997px) {
+  #contact .datos input,
+  #contact .datos,
+  #contact .mapa {
+    width: 100%;
+  }
+  #contact .datos {
+    padding: 60px 35px;
+  }
+  #contact .datos,
+  #contact .mapa iframe {
+    height: 350px;
+  }
+  #contact .datos {
+    height: auto;
+  }
+}
