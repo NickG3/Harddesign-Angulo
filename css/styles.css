@@ -427,6 +427,8 @@ header {
 #shop .contenedorFiltros {
   padding-right: 20px;
   margin-bottom: 25px;
+  float: left;
+  width: 100%;
 }
 
 #shop .contenedorFiltros .botonOrdenar {
