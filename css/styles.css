@@ -558,8 +558,6 @@ img {
   grid-template-columns: 100%;
   column-gap: 2rem;
   width: calc(100% - 2rem); /*los 2 rem de resta son los del espacio de gap*/
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
 }
 
 /*-------Buttons--------*/
