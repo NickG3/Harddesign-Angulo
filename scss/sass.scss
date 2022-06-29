@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
 
+@import "bootstrap/bootstrap.scss";
 @import "footer";
 @import "header";
 @import "variables";
@@ -123,8 +124,9 @@ img {
 }
 
 .button-light {
+  @extend .button;
   display: inline-flex;
-  color: var(--dark-color);
+  //color: var(--dark-color);
   font-weight: 700;
   align-items: center;
 }
@@ -144,15 +146,23 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+/* Usando Mixin e include */
+@mixin cajas($position, $padding, $background-color) {
+  position: $position;
+  padding: $padding;
+  background-color: $background-color;
+}
+
 .product {
-  position: relative;
+  @include cajas(relative, 2rem, --dark-color-lighteen);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  background-color: var(--dark-color-lighten);
   border-radius: 0.5rem;
   transition: 0.3s;
+  // position: relative;
+  // padding: 2rem;
+  // background-color: var(--dark-color-lighten);
 }
 .product__sale {
   position: absolute;
